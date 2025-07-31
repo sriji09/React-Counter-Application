@@ -6,11 +6,23 @@ h1 {
   text-align: center;
 }
 
-button {
-  background-color: darkgrey;
-  margin-left: 100px;
+.counter-button  {
+  margin: 10px;
   min-width: 20ch;
   font-size: 70%;
+  padding: 1.25rem 2rem; /* Generous padding for touch targets */
+            font-size: 2rem; /* Large font size for icons/text */
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 9999px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+} .increment {
+  background-color: rgb(88, 231, 88);
+} .decrement {
+  background-color: rgb(237, 98, 98);
 }
 
 .App-logo {
@@ -28,11 +40,11 @@ button {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
+  flex-direction: column;  
   font-size: calc(10px + 2vmin);
   color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-link {
@@ -46,4 +58,31 @@ button {
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex-container {
+  display: flex; /* This is the magic! Makes it a flex container */
+  flex-direction: column; /*Default: items stack vertically */
+  gap: 20px; /* Space between flex items */
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Take up most of the width */
+  max-width: 800px;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-item {
+            /* background-color: #007bff;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            flex: 1; /* Allows items to grow and shrink, taking equal space 
+            min-width: 150px; Ensure items don't get too small */
 }

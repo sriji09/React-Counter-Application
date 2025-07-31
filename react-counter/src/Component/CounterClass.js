@@ -18,11 +18,18 @@ class CounterClass extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="counter-container">
                 <h2>Class Component</h2>
-                <p>Number - {this.state.count}</p>
-                <button onClick ={() => this.incrementNumber()}>+</button>
-                <button onClick={() => this.decrementNumber()}>-</button>
+                <p className="count-display">Number - {this.state.count}</p>
+                <div className="button-group">
+                    <button className="counter-button increment" onClick={() => this.incrementNumber()}>
+                        <span className="button-icon">➕</span>
+                    </button>
+                    <button className="counter-button decrement" onClick ={() => this.decrementNumber()}>
+                        <span className="button-icon">➖</span>
+                    </button>                    
+                </div>
+                
             </div>
         )
     }

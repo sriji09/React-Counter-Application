@@ -14,8 +14,12 @@ function CounterFuction() {
         <div>
             <h2>Function Component</h2>
             <p>Number - {count}</p>
-            <button onClick ={incrementNumber}>+</button>
-            <button onClick={decrementNumber}>-</button>
+            <button className="counter-button increment"  onClick ={incrementNumber}>
+                <span className="button-icon">➕</span>
+            </button>
+            <button  className="counter-button decrement" onClick={decrementNumber}>
+                <span className="button-icon">➖</span>
+            </button>
         </div>
     )
 }

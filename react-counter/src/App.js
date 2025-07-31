@@ -7,8 +7,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Assignment-2 Counter Application</h1>
-        <CounterFuction />
-        <CounterClass />
+        <div className="flex-container">
+          <CounterFuction className="flex-item"/>
+          <CounterClass className="flex-item"/>
+        </div>
+        
       </header>
     </div>
   );
